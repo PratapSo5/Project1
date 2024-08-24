@@ -1,0 +1,382 @@
+    
+ *{
+    padding: 0;
+    margin: 0;
+ }
+ 
+ 
+ body{
+    background-color: aliceblue;
+} 
+.navbar{
+    display: flex;
+    background-color: aliceblue;
+    justify-content: center;
+    /* align-items: center; */
+} 
+
+nav ul{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    gap: 30px;
+    list-style: none;  
+}
+.l li{
+    display: flex;
+    align-items: center;
+}
+nav ul li {
+    font-size: 2rem;
+    display: inline;
+    
+    
+}
+
+
+
+/* first div */
+.imga{
+    /* width: 60wh; */
+    /* height: 60vh; */
+    background-color: rgb(250, 235, 215);
+    border-radius: 3px solid  black;
+    border-radius: 30px;
+   
+
+
+}
+.img1{
+    
+    width: 30vw;
+    height: 40vh;
+    border-radius: 20px;
+    padding: 3px;
+    
+    
+    
+}
+.imga h1{
+    margin: 20px;
+    /* padding: 20px; */
+    display: absolute;
+    text-align: center;
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:gray;
+    padding: 45px;
+    
+}
+.second{
+    
+    background-color: antiquewhite;
+    display: flex;
+    margin: 20px;
+    border-radius: 7px;
+}
+
+.card{
+    background-color:white;
+    width: 198px;
+    height: 340px;
+    border-radius: 12px;
+    padding: 0 0 64px;
+    margin: 20px;
+    verflow-y: scroll;  /* Only vertical scrolling */
+    overflow-x: hidden;
+}
+.image{
+    padding:   5px ;
+}
+.image img{
+    border-radius: 7px;
+    height: 110px;
+    width: 150px;
+}
+
+.content{
+    padding: 3px 12px;
+    margin: 10px; 
+    verflow-y: scroll;  /* Only vertical scrolling */
+    overflow-x: hidden
+}
+
+.content p{
+    font-size: 13px;
+    color: gray;
+    font-family: "Poppins", sans-serif;
+}
+.capsules{
+    padding: 0 34px 0 14px;
+    /* margin-top: 30px;
+    margin-bottom: auto; */
+}
+.capsules span{
+    border: 2px solid gray;
+    padding:0px 6px;
+    border-radius: 7px;
+    font-size: 12px;
+}
+.button button{
+  
+   
+    border-radius: 8px;
+    background-color: rgb(16, 76, 102);
+    color: rgb(196, 196, 221);
+   font-size: 16px;
+    
+    border: none;
+    cursor: pointer;
+   
+    
+}
+.button{
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 4px 7px;
+   /* : hover; */
+
+}
+
+/* start third */
+.third{
+    background-color: antiquewhite;
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+}
+.para{
+    display: absolute;
+    position: relative;
+    width: 30vw;
+    padding: 65px;
+    font-style: italic;
+} 
+.th_img img{
+    border-radius: 20px;
+    
+    left: 500px;
+
+}
+.th_img .img2{
+    
+    position: absolute;
+    left: 910px;
+   
+}
+
+footer{
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+
+/* media query */
+
+
+/* General styles for all screen sizes */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+/* Styles for larger screens (desktops and laptops) */
+@media only screen and (min-width: 1024px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+    
+    .navbar ul {
+        gap: 50px;
+    }
+    
+    .imga {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    .img1{
+        width: 150px;
+    }
+    
+    .imga img {
+        width: 22vw;
+        height: 30vh;
+    }
+    
+    .second {
+        display: flex;
+        justify-content: space-around;
+       
+    }
+    
+    .third {
+        flex-direction: row;
+    }
+    .image{
+        width: 100px;
+        height: 90px;
+        margin-bottom: 30px;
+    }
+    
+    .para {
+        width: 40%;
+        padding: 30px;
+    }
+    
+    .th_img {
+        display: flex;
+        flex-direction: row;
+    }
+ }
+ .capsules{
+    margin-bottom: 0;
+ }
+
+/* Styles for tablets */
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .navbar ul {
+        gap: 20px;
+    }
+    
+    .imga {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .imga img {
+        width: 40vw;
+        height: 30vh;
+        margin-bottom: 10px;
+    }
+    
+    .second {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    
+    .third {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .para {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .th_img {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .th_img img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+ a img{
+    height: 20px;
+    width: 25px;
+}
+
+/* Styles for mobile devices (small screens) */
+@media only screen and (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .navbar input.serach {
+        width: 80%;
+    }
+    
+    .imga {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .imga img {
+        width: 80vw;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .second {
+        flex-direction: column;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        verflow-y: scroll;  /* Only vertical scrolling */
+    overflow-x: hidden;
+    }
+    
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        verflow-y: scroll;  /* Only vertical scrolling */
+    overflow-x: hidden;
+    }
+    
+    .third {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .para {
+        width: 90%;
+        padding: 10px;
+    }
+    
+    .th_img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        verflow-y: scroll;  /* Only vertical scrolling */
+    overflow-x: hidden;
+    }
+    
+    .th_img img {
+        width: 90%;
+        height: auto;
+    }
+}
+.capsules{
+    margin-top: 0;
+}
+
+
+
